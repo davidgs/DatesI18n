@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Diumenge",
+        "monday": "Dilluns",
+        "tuesday": "Dimarts",
+        "wednesday": "Dimecres",
+        "thursday": "Dijous",
+        "friday": "Divendres",
+        "saturday": "Dissabte"
+    },
+    "weekdays_short": {
+        "sun": "Diu",
+        "mon": "Dil",
+        "tue": "Dmt",
+        "wed": "Dmc",
+        "thu": "Dij",
+        "fri": "Div",
+        "sat": "Dis"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Gener",
+        "february": "Febrer",
+        "march": "Mar\ufffd",
+        "april": "Abril",
+        "may": "Maig",
+        "june": "Juny",
+        "july": "Juliol",
+        "august": "Agost",
+        "september": "Setembre",
+        "october": "Octubre",
+        "november": "Novembre",
+        "december": "Desembre"
+    },
+    "months_short": {
+        "jan": "Gen",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Abr",
+        "may": "Mai",
+        "jun": "Jun",
+        "jul": "Jul",
+        "aug": "Ago",
+        "sep": "Set",
+        "oct": "Oct",
+        "nov": "Nov",
+        "dec": "Des"
+    },
+    "language": "ca"
+}

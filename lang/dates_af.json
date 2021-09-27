@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Sondag",
+        "monday": "Maandag",
+        "tuesday": "Dinsdag",
+        "wednesday": "Woensdag",
+        "thursday": "Donderdag",
+        "friday": "Vrydag",
+        "saturday": "Saterdag"
+    },
+    "weekdays_short": {
+        "sun": "",
+        "mon": "",
+        "tue": "",
+        "wed": "",
+        "thu": "",
+        "fri": "",
+        "sat": ""
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Januarie",
+        "february": "Februarie",
+        "march": "Maart",
+        "april": "April",
+        "may": "Mei",
+        "june": "Junie",
+        "july": "Julie",
+        "august": "Augustus",
+        "september": "September",
+        "october": "Oktober",
+        "november": "November",
+        "december": "Desember"
+    },
+    "months_short": {
+        "jan": "",
+        "feb": "",
+        "mar": "",
+        "apr": "",
+        "may": "",
+        "jun": "",
+        "jul": "",
+        "aug": "",
+        "sep": "",
+        "oct": "",
+        "nov": "",
+        "dec": ""
+    },
+    "language": "af"
+}

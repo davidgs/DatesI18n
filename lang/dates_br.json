@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Domingo",
+        "monday": "Segunda",
+        "tuesday": "Terça",
+        "wednesday": "Quarta",
+        "thursday": "Quinta",
+        "friday": "Sexta",
+        "saturday": "Sabádo"
+    },
+    "weekdays_short": {
+        "sun": "",
+        "mon": "",
+        "tue": "",
+        "wed": "",
+        "thu": "",
+        "fri": "",
+        "sat": ""
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Janeiro",
+        "february": "Fevereiro",
+        "march": "Março",
+        "april": "Abril",
+        "may": "Maio",
+        "june": "Junho",
+        "july": "Julho",
+        "august": "Agosto",
+        "september": "Setembro",
+        "october": "Outubro",
+        "november": "Novembro",
+        "december": "Dezembro"
+    },
+    "months_short": {
+        "jan": "",
+        "feb": "",
+        "mar": "",
+        "apr": "",
+        "may": "",
+        "jun": "",
+        "jul": "",
+        "aug": "",
+        "sep": "",
+        "oct": "",
+        "nov": "",
+        "dec": ""
+    },
+    "language": "br"
+}

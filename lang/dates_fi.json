@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Sunnuntai",
+        "monday": "Maanantai",
+        "tuesday": "Tiistai",
+        "wednesday": "Keskiviikko",
+        "thursday": "Torstai",
+        "friday": "Perjantai",
+        "saturday": "Lauantai"
+    },
+    "weekdays_short": {
+        "sun": "Su",
+        "mon": "Ma",
+        "tue": "Ti",
+        "wed": "Ke",
+        "thu": "To",
+        "fri": "Pe",
+        "sat": "La"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Tammikuu",
+        "february": "Helmikuu",
+        "march": "Maaliskuu",
+        "april": "Huhtikuu",
+        "may": "Toukokuu",
+        "june": "Kesäkuu",
+        "july": "Heinäkuu",
+        "august": "Elokuu",
+        "september": "Syyskuu",
+        "october": "Lokakuu",
+        "november": "Marraskuu",
+        "december": "Joulukuu"
+    },
+    "months_short": {
+        "jan": "Tam",
+        "feb": "Hel",
+        "mar": "Maa",
+        "apr": "Huh",
+        "may": "Tou",
+        "jun": "Kes",
+        "jul": "Hei",
+        "aug": "Elo",
+        "sep": "Syy",
+        "oct": "Lok",
+        "nov": "Mar",
+        "dec": "Jou"
+    },
+    "language": "fi"
+}

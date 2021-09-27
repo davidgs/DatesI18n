@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Sv\ufffdtdiena",
+        "monday": "Pirmdiena",
+        "tuesday": "Otrdiena",
+        "wednesday": "Tre\ufffddiena",
+        "thursday": "Ceturdiena",
+        "friday": "Piektdiena",
+        "saturday": "Sestdiena"
+    },
+    "weekdays_short": {
+        "sun": "Sv",
+        "mon": "Pr",
+        "tue": "Ot",
+        "wed": "Tr",
+        "thu": "Ce",
+        "fri": "Pk",
+        "sat": "Se"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Janv\ufffdris",
+        "february": "Febru\ufffdris",
+        "march": "Marts",
+        "april": "Apr\ufffdlis",
+        "may": "Maijs",
+        "june": "J\ufffdnijs",
+        "july": "J\ufffdlijs",
+        "august": "Augusts",
+        "september": "Septembris",
+        "october": "Oktobris",
+        "november": "Novembris",
+        "december": "Decembris"
+    },
+    "months_short": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "Mai",
+        "jun": "J\ufffdn",
+        "jul": "J\ufffdl",
+        "aug": "Aug",
+        "sep": "Sep",
+        "oct": "Okt",
+        "nov": "Nov",
+        "dec": "Dec"
+    },
+    "language": "lv"
+}

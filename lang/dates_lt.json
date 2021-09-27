@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Sekmadienis",
+        "monday": "Pirmadienis",
+        "tuesday": "Antradienis",
+        "wednesday": "Tre\ufffdiadienis",
+        "thursday": "Ketvirtadienis",
+        "friday": "Pentadienis",
+        "saturday": "\ufffde\ufffdtadienis"
+    },
+    "weekdays_short": {
+        "sun": "Sek",
+        "mon": "Pir",
+        "tue": "Ant",
+        "wed": "Tre",
+        "thu": "Ket",
+        "fri": "Pen",
+        "sat": "\ufffde\ufffd"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Sausis",
+        "february": "Vasaris",
+        "march": "Kovas",
+        "april": "Balandis",
+        "may": "Gegu\ufffd\ufffd",
+        "june": "Bir\ufffdelis",
+        "july": "Liepa",
+        "august": "Rugpj\ufffdtis",
+        "september": "Rugs\ufffdjis",
+        "october": "Spalis",
+        "november": "Lapkritis",
+        "december": "Gruodis"
+    },
+    "months_short": {
+        "jan": "Sau",
+        "feb": "Vas",
+        "mar": "Kov",
+        "apr": "Bal",
+        "may": "Geg",
+        "jun": "Bir",
+        "jul": "Lie",
+        "aug": "Rgp",
+        "sep": "Rgs",
+        "oct": "Spa",
+        "nov": "Lap",
+        "dec": "Gru"
+    },
+    "language": "lt"
+}

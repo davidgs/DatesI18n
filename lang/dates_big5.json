@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "\ufffdP\ufffd\ufffd\ufffd\ufffd",
+        "monday": "\ufffdP\ufffd\ufffd\ufffd@",
+        "tuesday": "\ufffdP\ufffd\ufffd\ufffdG",
+        "wednesday": "\ufffdP\ufffd\ufffd\ufffdT",
+        "thursday": "\ufffdP\ufffd\ufffd\ufffd|",
+        "friday": "\ufffdP\ufffd\ufffd\ufffd\ufffd",
+        "saturday": "\ufffdP\ufffd\ufffd\ufffd\ufffd"
+    },
+    "weekdays_short": {
+        "sun": "\ufffd\ufffd",
+        "mon": "\ufffd@",
+        "tue": "\ufffdG",
+        "wed": "\ufffdT",
+        "thu": "\ufffd|",
+        "fri": "\ufffd\ufffd",
+        "sat": "\ufffd\ufffd"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "\ufffd@\ufffd\ufffd",
+        "february": "\ufffdG\ufffd\ufffd",
+        "march": "\ufffdT\ufffd\ufffd",
+        "april": "\ufffd|\ufffd\ufffd",
+        "may": "\ufffd\ufffd\ufffd\ufffd",
+        "june": "\ufffd\ufffd\ufffd\ufffd",
+        "july": "\ufffdC\ufffd\ufffd",
+        "august": "\ufffdK\ufffd\ufffd",
+        "september": "\ufffdE\ufffd\ufffd",
+        "october": "\ufffdQ\ufffd\ufffd",
+        "november": "\ufffdQ\ufffd@\ufffd\ufffd",
+        "december": "\ufffdQ\ufffdG\ufffd\ufffd"
+    },
+    "months_short": {
+        "jan": "\ufffd@\ufffd\ufffd",
+        "feb": "\ufffdG\ufffd\ufffd",
+        "mar": "\ufffdT\ufffd\ufffd",
+        "apr": "\ufffd|\ufffd\ufffd",
+        "may": "\ufffd\ufffd\ufffd\ufffd",
+        "jun": "\ufffd\ufffd\ufffd\ufffd",
+        "jul": "\ufffdC\ufffd\ufffd",
+        "aug": "\ufffdK\ufffd\ufffd",
+        "sep": "\ufffdE\ufffd\ufffd",
+        "oct": "\ufffdQ\ufffd\ufffd",
+        "nov": "\ufffdQ\ufffd@\ufffd\ufffd",
+        "dec": "\ufffdQ\ufffdG\ufffd\ufffd"
+    },
+    "language": "big5"
+}

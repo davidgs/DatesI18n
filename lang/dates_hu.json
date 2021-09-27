@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Vas\ufffdrnap",
+        "monday": "H\ufffdtf\ufffd",
+        "tuesday": "Kedd",
+        "wednesday": "Szerda",
+        "thursday": "Cs\ufffdt\ufffdrt\ufffdk",
+        "friday": "P\ufffdntek",
+        "saturday": "Szombat"
+    },
+    "weekdays_short": {
+        "sun": "v",
+        "mon": "h",
+        "tue": "k",
+        "wed": "sze",
+        "thu": "cs",
+        "fri": "p",
+        "sat": "szo"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "janu\ufffdr",
+        "february": "febru\ufffdr",
+        "march": "m\ufffdrcius",
+        "april": "\ufffdprilis",
+        "may": "m\ufffdjus",
+        "june": "j\ufffdnius",
+        "july": "j\ufffdlius",
+        "august": "augusztus",
+        "september": "szeptember",
+        "october": "okt\ufffdber",
+        "november": "november",
+        "december": "december"
+    },
+    "months_short": {
+        "jan": "jan",
+        "feb": "feb",
+        "mar": "m\ufffdr",
+        "apr": "\ufffdpr",
+        "may": "m\ufffdj",
+        "jun": "j\ufffdn",
+        "jul": "j\ufffdl",
+        "aug": "aug",
+        "sep": "sze",
+        "oct": "okt",
+        "nov": "nov",
+        "dec": "dec"
+    },
+    "language": "hu"
+}

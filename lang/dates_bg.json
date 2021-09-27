@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "monday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "tuesday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "wednesday": "\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "thursday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "friday": "\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "saturday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"
+    },
+    "weekdays_short": {
+        "sun": "\ufffd\ufffd\ufffd",
+        "mon": "\ufffd\ufffd\ufffd",
+        "tue": "\ufffd\ufffd\ufffd",
+        "wed": "\ufffd\ufffd\ufffd",
+        "thu": "\ufffd\ufffd\ufffd",
+        "fri": "\ufffd\ufffd\ufffd",
+        "sat": "\ufffd\ufffd\ufffd"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "february": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "march": "\ufffd\ufffd\ufffd\ufffd",
+        "april": "\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "may": "\ufffd\ufffd\ufffd",
+        "june": "\ufffd\ufffd\ufffd",
+        "july": "\ufffd\ufffd\ufffd",
+        "august": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "september": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "october": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "november": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "december": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"
+    },
+    "months_short": {
+        "jan": "\ufffd\ufffd\ufffd",
+        "feb": "\ufffd\ufffd\ufffd",
+        "mar": "\ufffd\ufffd\ufffd",
+        "apr": "\ufffd\ufffd\ufffd",
+        "may": "\ufffd\ufffd\ufffd",
+        "jun": "\ufffd\ufffd\ufffd",
+        "jul": "\ufffd\ufffd\ufffd",
+        "aug": "\ufffd\ufffd\ufffd",
+        "sep": "\ufffd\ufffd\ufffd",
+        "oct": "\ufffd\ufffd\ufffd",
+        "nov": "\ufffd\ufffd\ufffd",
+        "dec": "\ufffd\ufffd\ufffd"
+    },
+    "language": "bg"
+}

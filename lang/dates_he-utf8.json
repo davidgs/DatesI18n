@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "ראשון",
+        "monday": "שני",
+        "tuesday": "שלישי",
+        "wednesday": "רביעי",
+        "thursday": "חמישי",
+        "friday": "שישי",
+        "saturday": "שבת"
+    },
+    "weekdays_short": {
+        "sun": "א",
+        "mon": "ב",
+        "tue": "ג",
+        "wed": "ד",
+        "thu": "ה",
+        "fri": "ו",
+        "sat": "ש"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "ינואר",
+        "february": "פברואר",
+        "march": "מרץ",
+        "april": "אפריל",
+        "may": "מאי",
+        "june": "יוני",
+        "july": "יולי",
+        "august": "אוגוסט",
+        "september": "ספטמבר",
+        "october": "אוקטובר",
+        "november": "נובמבר",
+        "december": "דצמבר"
+    },
+    "months_short": {
+        "jan": "ינא",
+        "feb": "פבר",
+        "mar": "מרץ",
+        "apr": "אפר",
+        "may": "מאי",
+        "jun": "יונ",
+        "jul": "יול",
+        "aug": "אוג",
+        "sep": "ספט",
+        "oct": "אוק",
+        "nov": "נוב",
+        "dec": "דצמ"
+    },
+    "language": "he-utf8"
+}

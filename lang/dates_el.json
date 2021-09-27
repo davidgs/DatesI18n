@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Κυριακή",
+        "monday": "Δευτέρα",
+        "tuesday": "Τρίτη",
+        "wednesday": "Τετάρτη",
+        "thursday": "Πέμπτη",
+        "friday": "Παρασκευή",
+        "saturday": "Σάββατο"
+    },
+    "weekdays_short": {
+        "sun": "Κυ",
+        "mon": "Δε",
+        "tue": "Tρ",
+        "wed": "Τε",
+        "thu": "Πε",
+        "fri": "Πα",
+        "sat": "Σα"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Ιανουάριος",
+        "february": "Φεβρουάριος",
+        "march": "Μάρτιος",
+        "april": "Απρίλιος",
+        "may": "Μάϊος",
+        "june": "Ιούνιος",
+        "july": "Ιούλιος",
+        "august": "Αύγουστος",
+        "september": "Σεπτέμβριος",
+        "october": "Οκτώβριος",
+        "november": "Νοέμβριος",
+        "december": "Δεκέμβριος"
+    },
+    "months_short": {
+        "jan": "Ιαν",
+        "feb": "Φεβ",
+        "mar": "Μαρ",
+        "apr": "Απρ",
+        "may": "Μαι",
+        "jun": "Ιουν",
+        "jul": "Ιουλ",
+        "aug": "Αυγ",
+        "sep": "Σεπ",
+        "oct": "Οκτ",
+        "nov": "Νοε",
+        "dec": "Δεκ"
+    },
+    "language": "el"
+}

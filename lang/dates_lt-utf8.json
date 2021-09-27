@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Sekmadienis",
+        "monday": "Pirmadienis",
+        "tuesday": "Antradienis",
+        "wednesday": "Trečiadienis",
+        "thursday": "Ketvirtadienis",
+        "friday": "Pentadienis",
+        "saturday": "Šeštadienis"
+    },
+    "weekdays_short": {
+        "sun": "Sek",
+        "mon": "Pir",
+        "tue": "Ant",
+        "wed": "Tre",
+        "thu": "Ket",
+        "fri": "Pen",
+        "sat": "Šeš"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Sausis",
+        "february": "Vasaris",
+        "march": "Kovas",
+        "april": "Balandis",
+        "may": "Gegužė",
+        "june": "Birželis",
+        "july": "Liepa",
+        "august": "Rugpjūtis",
+        "september": "Rugsėjis",
+        "october": "Spalis",
+        "november": "Lapkritis",
+        "december": "Gruodis"
+    },
+    "months_short": {
+        "jan": "Sau",
+        "feb": "Vas",
+        "mar": "Kov",
+        "apr": "Bal",
+        "may": "Geg",
+        "jun": "Bir",
+        "jul": "Lie",
+        "aug": "Rgp",
+        "sep": "Rgs",
+        "oct": "Spa",
+        "nov": "Lap",
+        "dec": "Gru"
+    },
+    "language": "lt-utf8"
+}

@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "E Diele",
+        "monday": "E Hene",
+        "tuesday": "E Marte",
+        "wednesday": "E Merkure",
+        "thursday": "E Enjte",
+        "friday": "E Premte",
+        "saturday": "E Shtune"
+    },
+    "weekdays_short": {
+        "sun": "Die",
+        "mon": "Hen",
+        "tue": "Mar",
+        "wed": "Mer",
+        "thu": "Enj",
+        "fri": "Pre",
+        "sat": "Sht"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Janar",
+        "february": "Shkurt",
+        "march": "Mars",
+        "april": "Prill",
+        "may": "Maj",
+        "june": "Qeshor",
+        "july": "Korrik",
+        "august": "Gusht",
+        "september": "Shtator",
+        "october": "Tetor",
+        "november": "Nentor",
+        "december": "Dhjetor"
+    },
+    "months_short": {
+        "jan": "Jan",
+        "feb": "Shk",
+        "mar": "Mar",
+        "apr": "Pri",
+        "may": "Maj",
+        "jun": "Qes",
+        "jul": "Kor",
+        "aug": "Gus",
+        "sep": "Sht",
+        "oct": "Tet",
+        "nov": "Nen",
+        "dec": "Dhj"
+    },
+    "language": "al"
+}

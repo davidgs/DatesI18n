@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "u5468u65e5",
+        "monday": "//u5468u65e5\r\n u5468u4e00",
+        "tuesday": "//u5468u4e00\r\n u5468u4e8c",
+        "wednesday": "//u5468u4e8c\r\n u5468u4e09",
+        "thursday": "//u5468u4e09\r\n u5468u56db",
+        "friday": "//u5468u56db\r\n u5468u4e94",
+        "saturday": "//u5468u4e94\r\n u5468u516d"
+    },
+    "weekdays_short": {
+        "sun": "u5468u65e5",
+        "mon": "u5468u4e00",
+        "tue": "u5468u4e8c",
+        "wed": "u5468u4e09",
+        "thu": "u5468u56db",
+        "fri": "u5468u4e94",
+        "sat": "u5468u516d"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "u4e00u6708",
+        "february": "u4e8cu6708",
+        "march": "u4e09u6708",
+        "april": "u56dbu6708",
+        "may": "u4e94u6708",
+        "june": "u516du6708",
+        "july": "u4e03u6708",
+        "august": "u516bu6708",
+        "september": "u4e5du6708",
+        "october": "u5341u6708",
+        "november": "u5341u4e00u6708",
+        "december": "u5341u4e8cu6708"
+    },
+    "months_short": {
+        "jan": "u4e00u6708",
+        "feb": "u4e8cu6708",
+        "mar": "u4e09u6708",
+        "apr": "u56dbu6708",
+        "may": "u4e94u6708",
+        "jun": "u516du6708",
+        "jul": "u4e03u6708",
+        "aug": "u516bu6708",
+        "sep": "u4e5du6708",
+        "oct": "u5341u6708",
+        "nov": "u5341u4e00u6708",
+        "dec": "u5341u4e8cu6708"
+    },
+    "language": "cn_utf8"
+}

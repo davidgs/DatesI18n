@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "\ufffdϿ\ufffd\ufffd\ufffd",
+        "monday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "tuesday": "ȭ\ufffd\ufffd\ufffd\ufffd",
+        "wednesday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "thursday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "friday": "\ufffdݿ\ufffd\ufffd\ufffd",
+        "saturday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"
+    },
+    "weekdays_short": {
+        "sun": "\ufffd\ufffd",
+        "mon": "\ufffd\ufffd",
+        "tue": "ȭ",
+        "wed": "\ufffd\ufffd",
+        "thu": "\ufffd\ufffd",
+        "fri": "\ufffd\ufffd",
+        "sat": "\ufffd\ufffd"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "1\ufffd\ufffd",
+        "february": "2\ufffd\ufffd",
+        "march": "3\ufffd\ufffd",
+        "april": "4\ufffd\ufffd",
+        "may": "5\ufffd\ufffd",
+        "june": "6\ufffd\ufffd",
+        "july": "7\ufffd\ufffd",
+        "august": "8\ufffd\ufffd",
+        "september": "9\ufffd\ufffd",
+        "october": "10\ufffd\ufffd",
+        "november": "11\ufffd\ufffd",
+        "december": "12\ufffd\ufffd"
+    },
+    "months_short": {
+        "jan": "1",
+        "feb": "2",
+        "mar": "3",
+        "apr": "4",
+        "may": "5",
+        "jun": "6",
+        "jul": "7",
+        "aug": "8",
+        "sep": "9",
+        "oct": "10",
+        "nov": "11",
+        "dec": "12"
+    },
+    "language": "ko"
+}

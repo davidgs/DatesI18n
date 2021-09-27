@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "\ufffd\ufffd",
+        "monday": "\ufffd\ufffd",
+        "tuesday": "\ufffd\ufffd",
+        "wednesday": "\ufffd\ufffd",
+        "thursday": "\ufffd\ufffd",
+        "friday": "\ufffd\ufffd",
+        "saturday": "\ufffdy"
+    },
+    "weekdays_short": {
+        "sun": "",
+        "mon": "",
+        "tue": "",
+        "wed": "",
+        "thu": "",
+        "fri": "",
+        "sat": ""
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "1\ufffd\ufffd",
+        "february": "2\ufffd\ufffd",
+        "march": "3\ufffd\ufffd",
+        "april": "4\ufffd\ufffd",
+        "may": "5\ufffd\ufffd",
+        "june": "6\ufffd\ufffd",
+        "july": "7\ufffd\ufffd",
+        "august": "8\ufffd\ufffd",
+        "september": "9\ufffd\ufffd",
+        "october": "10\ufffd\ufffd",
+        "november": "11\ufffd\ufffd",
+        "december": "12\ufffd\ufffd"
+    },
+    "months_short": {
+        "jan": "",
+        "feb": "",
+        "mar": "",
+        "apr": "",
+        "may": "",
+        "jun": "",
+        "jul": "",
+        "aug": "",
+        "sep": "",
+        "oct": "",
+        "nov": "",
+        "dec": ""
+    },
+    "language": "jp"
+}

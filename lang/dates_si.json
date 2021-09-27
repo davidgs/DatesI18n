@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Nedelja",
+        "monday": "Ponedeljek",
+        "tuesday": "Torek",
+        "wednesday": "Sreda",
+        "thursday": "Četrtek",
+        "friday": "Petek",
+        "saturday": "Sobota"
+    },
+    "weekdays_short": {
+        "sun": "Ned",
+        "mon": "Pon",
+        "tue": "Tor",
+        "wed": "Sre",
+        "thu": "Čet",
+        "fri": "Pet",
+        "sat": "Sob"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Januar",
+        "february": "Februar",
+        "march": "Marec",
+        "april": "April",
+        "may": "Maj",
+        "june": "Junij",
+        "july": "Julij",
+        "august": "Avgust",
+        "september": "September",
+        "october": "Oktober",
+        "november": "November",
+        "december": "December"
+    },
+    "months_short": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "Maj",
+        "jun": "Jun",
+        "jul": "Jul",
+        "aug": "Avg",
+        "sep": "Sep",
+        "oct": "Okt",
+        "nov": "Nov",
+        "dec": "Dec"
+    },
+    "language": "si"
+}

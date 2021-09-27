@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "Pazar",
+        "monday": "Pazartesi",
+        "tuesday": "Sal\ufffd",
+        "wednesday": "\ufffdar\ufffdamba",
+        "thursday": "Per\ufffdembe",
+        "friday": "Cuma",
+        "saturday": "Cumartesi"
+    },
+    "weekdays_short": {
+        "sun": "",
+        "mon": "",
+        "tue": "",
+        "wed": "",
+        "thu": "",
+        "fri": "",
+        "sat": ""
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "Ocak",
+        "february": "\ufffdubat",
+        "march": "Mart",
+        "april": "Nisan",
+        "may": "May\ufffds",
+        "june": "Haziran",
+        "july": "Temmuz",
+        "august": "A\ufffdustos",
+        "september": "Eyl\ufffdl",
+        "october": "Ekim",
+        "november": "Kas\ufffdm",
+        "december": "Aral\ufffdk"
+    },
+    "months_short": {
+        "jan": "",
+        "feb": "",
+        "mar": "",
+        "apr": "",
+        "may": "",
+        "jun": "",
+        "jul": "",
+        "aug": "",
+        "sep": "",
+        "oct": "",
+        "nov": "",
+        "dec": ""
+    },
+    "language": "tr"
+}

@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "NedeÄľa",
+        "monday": "Pondelok",
+        "tuesday": "Utorok",
+        "wednesday": "Streda",
+        "thursday": "Ĺ tvrtok",
+        "friday": "Piatok",
+        "saturday": "Sobota"
+    },
+    "weekdays_short": {
+        "sun": "Ned",
+        "mon": "Pon",
+        "tue": "Uto",
+        "wed": "Str",
+        "thu": "Ĺ tv",
+        "fri": "Pia",
+        "sat": "Sob"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "JanuĂˇr",
+        "february": "FebruĂˇr",
+        "march": "Marec",
+        "april": "AprĂ­l",
+        "may": "MĂˇj",
+        "june": "JĂşn",
+        "july": "JĂşl",
+        "august": "August",
+        "september": "September",
+        "october": "OktĂłber",
+        "november": "November",
+        "december": "December"
+    },
+    "months_short": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "MĂˇj",
+        "jun": "JĂşn",
+        "jul": "JĂşl",
+        "aug": "Aug",
+        "sep": "Sep",
+        "oct": "Okt",
+        "nov": "Nov",
+        "dec": "Dec"
+    },
+    "language": "sk"
+}

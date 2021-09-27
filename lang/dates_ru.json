@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "воскресенье",
+        "monday": "понедельник",
+        "tuesday": "вторник",
+        "wednesday": "среда",
+        "thursday": "четверг",
+        "friday": "пятница",
+        "saturday": "суббота"
+    },
+    "weekdays_short": {
+        "sun": "вск",
+        "mon": "пон",
+        "tue": "втр",
+        "wed": "срд",
+        "thu": "чет",
+        "fri": "пят",
+        "sat": "суб"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "январь",
+        "february": "февраль",
+        "march": "март",
+        "april": "апрель",
+        "may": "май",
+        "june": "июнь",
+        "july": "июль",
+        "august": "август",
+        "september": "сентябрь",
+        "october": "октябрь",
+        "november": "ноябрь",
+        "december": "декабрь"
+    },
+    "months_short": {
+        "jan": "янв",
+        "feb": "фев",
+        "mar": "мар",
+        "apr": "апр",
+        "may": "май",
+        "jun": "июн",
+        "jul": "июл",
+        "aug": "авг",
+        "sep": "сен",
+        "oct": "окт",
+        "nov": "ноя",
+        "dec": "дек"
+    },
+    "language": "ru"
+}

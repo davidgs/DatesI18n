@@ -1,0 +1,58 @@
+{
+    "weekdays": {
+        "sunday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "monday": "\ufffd\ufffd\ufffd\ufffdһ",
+        "tuesday": "\ufffd\ufffd\ufffdڶ\ufffd",
+        "wednesday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "thursday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "friday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd",
+        "saturday": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"
+    },
+    "weekdays_short": {
+        "sun": "\ufffd\ufffd",
+        "mon": "һ",
+        "tue": "\ufffd\ufffd",
+        "wed": "\ufffd\ufffd",
+        "thu": "\ufffd\ufffd",
+        "fri": "\ufffd\ufffd",
+        "sat": "\ufffd\ufffd"
+    },
+    "weekdays_min": {
+        "Su": "",
+        "Mo": "",
+        "Tu": "",
+        "We": "",
+        "Th": "",
+        "Fr": "",
+        "Sa": ""
+    },
+    "months": {
+        "january": "һ\ufffd\ufffd",
+        "february": "\ufffd\ufffd\ufffd\ufffd",
+        "march": "\ufffd\ufffd\ufffd\ufffd",
+        "april": "\ufffd\ufffd\ufffd\ufffd",
+        "may": "\ufffd\ufffd\ufffd\ufffd",
+        "june": "\ufffd\ufffd\ufffd\ufffd",
+        "july": "\ufffd\ufffd\ufffd\ufffd",
+        "august": "\ufffd\ufffd\ufffd\ufffd",
+        "september": "\ufffd\ufffd\ufffd\ufffd",
+        "october": "ʮ\ufffd\ufffd",
+        "november": "ʮһ\ufffd\ufffd",
+        "december": "ʮ\ufffd\ufffd\ufffd\ufffd"
+    },
+    "months_short": {
+        "jan": "һ\ufffd\ufffd",
+        "feb": "\ufffd\ufffd\ufffd\ufffd",
+        "mar": "\ufffd\ufffd\ufffd\ufffd",
+        "apr": "\ufffd\ufffd\ufffd\ufffd",
+        "may": "\ufffd\ufffd\ufffd\ufffd",
+        "jun": "\ufffd\ufffd\ufffd\ufffd",
+        "jul": "\ufffd\ufffd\ufffd\ufffd",
+        "aug": "\ufffd\ufffd\ufffd\ufffd",
+        "sep": "\ufffd\ufffd\ufffd\ufffd",
+        "oct": "ʮ\ufffd\ufffd",
+        "nov": "ʮһ\ufffd\ufffd",
+        "dec": "ʮ\ufffd\ufffd\ufffd\ufffd"
+    },
+    "language": "zh"
+}
