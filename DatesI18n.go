@@ -45,11 +45,9 @@
 package datesi18n
 
 import (
-	"fmt"
+	"embed"
 	"encoding/json"
-	"io/ioutil"
-	"os"
-	"path/filepath"
+	"fmt"
 )
 
 var language = "en"
@@ -57,13 +55,16 @@ var language = "en"
 // DatesI18N is a struct that holds the internationalization data for
 // the dates package.
 type DatesI18N struct {
-	Weekdays       DatesWeekdays       `json:"weekdays"`
+	Weekdays      DatesWeekdays      `json:"weekdays"`
 	WeekdaysShort DatesWeekdaysShort `json:"weekdaysshort"`
 	WeekdaysMin   DatesWeekdaysMin   `json:"weekdaysmin"`
-	Months         DatesMonths         `json:"months"`
+	Months        DatesMonths        `json:"months"`
 	MonthsShort   DatesMonthsShort   `json:"monthsshort"`
-	Language 		 string               `json:"language"`
+	Language      string             `json:"language"`
 }
+
+//go:embed lang/*.json
+var f embed.FS
 
 // DatesWeekdays is a struct that holds the names of the weekdays.
 type DatesWeekdays struct {
@@ -390,12 +391,7 @@ func NewDatesI18N(lang string) *DatesI18N { // test written
 // loads the language file for the given language
 func (d *DatesI18N) setLanguage(lang string) {
 	d.Language = lang
-	p := os.Getenv("GOPATH")
-	if p == "" {
-		p = "."
-	}
-	p = filepath.Join(p, "src", "github.com", "davidgs", "datesi18n", "lang", "dates_" + lang + ".json")
-	dat, err := ioutil.ReadFile(p) // "lang/dates_" + lang + ".json")
+	dat, err := f.ReadFile("lang/dates_"+lang+".json")
 	if err != nil {
 		fmt.Println("No json file: ", err)
 	}
