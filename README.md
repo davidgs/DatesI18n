@@ -4,16 +4,13 @@ A library to do quick translations of Day and Month names, including 'short' nam
 
 ## Usage
 
-In your project directory, create a directory `lang` and put any of the language translations you plan to use in that directory.
-Once you've done that:
-
 ```go
 package main
 
 import (
   "fmt"
 
-  datesI18N "github.com/davidgs/datesI18N/v2"
+  datesI18N "github.com/davidgs/datesI18N"
 )
 
 func main() {
