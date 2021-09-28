@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>datesi18n - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="/lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="/lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.17.1";</script>
+<script src="/lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="/pkg/">GoDoc</a></div>
+<a href="#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package datesi18n
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "github.com/davidgs/datesi18n"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+Package datesi18n provides internationalization for programs needing
+language support for weekdays and months. The package is intended to
+be used with the dates package.
+</p>
+<p>
+The following code is an example of using the datesi18n package:
+</p>
+<pre>import &#34;github.com/mjibson/go-datesi18n&#34;
+
+func main() {
+	d := datesi18n.NewDatesI18N(&#34;en&#34;)
+	fmt.Println(d.Weekdays.Monday)
+	fmt.Println(d.WeekdaysShort.Monday)
+	fmt.Println(d.WeekdaysMin.Monday)
+	fmt.Println(d.Months.January)
+}
+</pre>
+<p>
+The output of the program is:
+</p>
+<pre>Monday
+Mon
+M
+January
+</pre>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#DatesI18N">type DatesI18N</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#NewDatesI18N">func NewDatesI18N(lang string) *DatesI18N</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.DayName">func (d *DatesI18N) DayName(day int) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.DayNumber">func (d *DatesI18N) DayNumber(day string) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.MinDayName">func (d *DatesI18N) MinDayName(day int) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.MinDayNumber">func (d *DatesI18N) MinDayNumber(day string) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.MonthName">func (d *DatesI18N) MonthName(month int) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.MonthNumber">func (d *DatesI18N) MonthNumber(month string) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.ShortDayName">func (d *DatesI18N) ShortDayName(day int) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.ShortDayNumber">func (d *DatesI18N) ShortDayNumber(day string) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.ShortMonthName">func (d *DatesI18N) ShortMonthName(month int) string</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#DatesI18N.ShortMonthNumber">func (d *DatesI18N) ShortMonthNumber(month string) int</a></dd>
+				
+			
+				
+				<dd><a href="#DatesMonths">type DatesMonths</a></dd>
+				
+				
+			
+				
+				<dd><a href="#DatesMonthsShort">type DatesMonthsShort</a></dd>
+				
+				
+			
+				
+				<dd><a href="#DatesWeekdays">type DatesWeekdays</a></dd>
+				
+				
+			
+				
+				<dd><a href="#DatesWeekdaysMin">type DatesWeekdaysMin</a></dd>
+				
+				
+			
+				
+				<dd><a href="#DatesWeekdaysShort">type DatesWeekdaysShort</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="/src/github.com/davidgs/datesi18n/DatesI18n.go">DatesI18n.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+		
+		
+		
+			
+			
+			<h2 id="DatesI18N">type <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=1885:2235#L47">DatesI18N</a>
+				<a class="permalink" href="#DatesI18N">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DatesI18N is a struct that holds the internationalization data for
+the dates package.
+</p>
+
+			<pre>type DatesI18N struct {
+<span id="DatesI18N.Weekdays"></span>    Weekdays      <a href="#DatesWeekdays">DatesWeekdays</a>      `json:&#34;weekdays&#34;`
+<span id="DatesI18N.WeekdaysShort"></span>    WeekdaysShort <a href="#DatesWeekdaysShort">DatesWeekdaysShort</a> `json:&#34;weekdaysshort&#34;`
+<span id="DatesI18N.WeekdaysMin"></span>    WeekdaysMin   <a href="#DatesWeekdaysMin">DatesWeekdaysMin</a>   `json:&#34;weekdaysmin&#34;`
+<span id="DatesI18N.Months"></span>    Months        <a href="#DatesMonths">DatesMonths</a>        `json:&#34;months&#34;`
+<span id="DatesI18N.MonthsShort"></span>    MonthsShort   <a href="#DatesMonthsShort">DatesMonthsShort</a>   `json:&#34;monthsshort&#34;`
+<span id="DatesI18N.Language"></span>    Language      <a href="/pkg/builtin/#string">string</a>             `json:&#34;language&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+				
+				<h3 id="NewDatesI18N">func <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=9432:9473#L372">NewDatesI18N</a>
+					<a class="permalink" href="#NewDatesI18N">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func NewDatesI18N(lang <a href="/pkg/builtin/#string">string</a>) *<a href="#DatesI18N">DatesI18N</a></pre>
+				<p>
+NewDatesI18N returns a new DatesI18N struct initialized with the language values for the given language
+</p>
+
+				
+				
+			
+
+			
+				
+				<h3 id="DatesI18N.DayName">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=4291:4334#L122">DayName</a>
+					<a class="permalink" href="#DatesI18N.DayName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) DayName(day <a href="/pkg/builtin/#int">int</a>) <a href="/pkg/builtin/#string">string</a></pre>
+				<p>
+DayName returns the name of the day of the week given by index number.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.DayNumber">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=4714:4759#L143">DayNumber</a>
+					<a class="permalink" href="#DatesI18N.DayNumber">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) DayNumber(day <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#int">int</a></pre>
+				<p>
+DayNumber returns the number of the day of the week given by name.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.MinDayName">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=6108:6154#L206">MinDayName</a>
+					<a class="permalink" href="#DatesI18N.MinDayName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) MinDayName(day <a href="/pkg/builtin/#int">int</a>) <a href="/pkg/builtin/#string">string</a></pre>
+				<p>
+MinDayName returns the minimal name of the day of the week given by index number.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.MinDayNumber">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=6566:6614#L227">MinDayNumber</a>
+					<a class="permalink" href="#DatesI18N.MinDayNumber">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) MinDayNumber(day <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#int">int</a></pre>
+				<p>
+MinDayNumber returns the number of the day of the week given by minimal name.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.MonthName">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=6995:7042#L248">MonthName</a>
+					<a class="permalink" href="#DatesI18N.MonthName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) MonthName(month <a href="/pkg/builtin/#int">int</a>) <a href="/pkg/builtin/#string">string</a></pre>
+				<p>
+MonthName returns the name of the month given by index number.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.MonthNumber">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=7553:7602#L279">MonthNumber</a>
+					<a class="permalink" href="#DatesI18N.MonthNumber">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) MonthNumber(month <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#int">int</a></pre>
+				<p>
+MonthNumber returns the number of the month given by name.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.ShortDayName">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=5154:5202#L164">ShortDayName</a>
+					<a class="permalink" href="#DatesI18N.ShortDayName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) ShortDayName(day <a href="/pkg/builtin/#int">int</a>) <a href="/pkg/builtin/#string">string</a></pre>
+				<p>
+ShortDayName returns the short name of the day of the week given by index number.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.ShortDayNumber">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=5628:5678#L185">ShortDayNumber</a>
+					<a class="permalink" href="#DatesI18N.ShortDayNumber">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) ShortDayNumber(day <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#int">int</a></pre>
+				<p>
+ShortDayNumber returns the number of the day of the week given by short name.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.ShortMonthName">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=8128:8180#L310">ShortMonthName</a>
+					<a class="permalink" href="#DatesI18N.ShortMonthName">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) ShortMonthName(month <a href="/pkg/builtin/#int">int</a>) <a href="/pkg/builtin/#string">string</a></pre>
+				<p>
+ShortMonthName returns the short name of the month given by index number.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="DatesI18N.ShortMonthNumber">func (*DatesI18N) <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=8762:8816#L341">ShortMonthNumber</a>
+					<a class="permalink" href="#DatesI18N.ShortMonthNumber">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (d *<a href="#DatesI18N">DatesI18N</a>) ShortMonthNumber(month <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#int">int</a></pre>
+				<p>
+ShortMonthNumber returns the number of the month given by short name.
+</p>
+
+				
+				
+				
+			
+		
+			
+			
+			<h2 id="DatesMonths">type <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=3298:3735#L90">DatesMonths</a>
+				<a class="permalink" href="#DatesMonths">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DatesMonths is a struct that holds the names of the months.
+</p>
+
+			<pre>type DatesMonths struct {
+<span id="DatesMonths.January"></span>    January   <a href="/pkg/builtin/#string">string</a> `json:&#34;january&#34;`
+<span id="DatesMonths.February"></span>    February  <a href="/pkg/builtin/#string">string</a> `json:&#34;february&#34;`
+<span id="DatesMonths.March"></span>    March     <a href="/pkg/builtin/#string">string</a> `json:&#34;march&#34;`
+<span id="DatesMonths.April"></span>    April     <a href="/pkg/builtin/#string">string</a> `json:&#34;april&#34;`
+<span id="DatesMonths.May"></span>    May       <a href="/pkg/builtin/#string">string</a> `json:&#34;may&#34;`
+<span id="DatesMonths.June"></span>    June      <a href="/pkg/builtin/#string">string</a> `json:&#34;june&#34;`
+<span id="DatesMonths.July"></span>    July      <a href="/pkg/builtin/#string">string</a> `json:&#34;july&#34;`
+<span id="DatesMonths.August"></span>    August    <a href="/pkg/builtin/#string">string</a> `json:&#34;august&#34;`
+<span id="DatesMonths.September"></span>    September <a href="/pkg/builtin/#string">string</a> `json:&#34;september&#34;`
+<span id="DatesMonths.October"></span>    October   <a href="/pkg/builtin/#string">string</a> `json:&#34;october&#34;`
+<span id="DatesMonths.November"></span>    November  <a href="/pkg/builtin/#string">string</a> `json:&#34;november&#34;`
+<span id="DatesMonths.December"></span>    December  <a href="/pkg/builtin/#string">string</a> `json:&#34;december&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DatesMonthsShort">type <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=3811:4215#L106">DatesMonthsShort</a>
+				<a class="permalink" href="#DatesMonthsShort">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DatesMonthsShort is a struct that holds the short names of the months.
+</p>
+
+			<pre>type DatesMonthsShort struct {
+<span id="DatesMonthsShort.January"></span>    January   <a href="/pkg/builtin/#string">string</a> `json:&#34;jan&#34;`
+<span id="DatesMonthsShort.February"></span>    February  <a href="/pkg/builtin/#string">string</a> `json:&#34;feb&#34;`
+<span id="DatesMonthsShort.March"></span>    March     <a href="/pkg/builtin/#string">string</a> `json:&#34;mar&#34;`
+<span id="DatesMonthsShort.April"></span>    April     <a href="/pkg/builtin/#string">string</a> `json:&#34;apr&#34;`
+<span id="DatesMonthsShort.May"></span>    May       <a href="/pkg/builtin/#string">string</a> `json:&#34;may&#34;`
+<span id="DatesMonthsShort.June"></span>    June      <a href="/pkg/builtin/#string">string</a> `json:&#34;jun&#34;`
+<span id="DatesMonthsShort.July"></span>    July      <a href="/pkg/builtin/#string">string</a> `json:&#34;jul&#34;`
+<span id="DatesMonthsShort.August"></span>    August    <a href="/pkg/builtin/#string">string</a> `json:&#34;aug&#34;`
+<span id="DatesMonthsShort.September"></span>    September <a href="/pkg/builtin/#string">string</a> `json:&#34;sep&#34;`
+<span id="DatesMonthsShort.October"></span>    October   <a href="/pkg/builtin/#string">string</a> `json:&#34;oct&#34;`
+<span id="DatesMonthsShort.November"></span>    November  <a href="/pkg/builtin/#string">string</a> `json:&#34;nov&#34;`
+<span id="DatesMonthsShort.December"></span>    December  <a href="/pkg/builtin/#string">string</a> `json:&#34;dec&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DatesWeekdays">type <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=2304:2579#L57">DatesWeekdays</a>
+				<a class="permalink" href="#DatesWeekdays">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DatesWeekdays is a struct that holds the names of the weekdays.
+</p>
+
+			<pre>type DatesWeekdays struct {
+<span id="DatesWeekdays.Sunday"></span>    Sunday    <a href="/pkg/builtin/#string">string</a> `json:&#34;sunday&#34;`
+<span id="DatesWeekdays.Monday"></span>    Monday    <a href="/pkg/builtin/#string">string</a> `json:&#34;monday&#34;`
+<span id="DatesWeekdays.Tuesday"></span>    Tuesday   <a href="/pkg/builtin/#string">string</a> `json:&#34;tuesday&#34;`
+<span id="DatesWeekdays.Wednesday"></span>    Wednesday <a href="/pkg/builtin/#string">string</a> `json:&#34;wednesday&#34;`
+<span id="DatesWeekdays.Thursday"></span>    Thursday  <a href="/pkg/builtin/#string">string</a> `json:&#34;thursday&#34;`
+<span id="DatesWeekdays.Friday"></span>    Friday    <a href="/pkg/builtin/#string">string</a> `json:&#34;friday&#34;`
+<span id="DatesWeekdays.Saturday"></span>    Saturday  <a href="/pkg/builtin/#string">string</a> `json:&#34;saturday&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DatesWeekdaysMin">type <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=2991:3233#L79">DatesWeekdaysMin</a>
+				<a class="permalink" href="#DatesWeekdaysMin">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DattesWeekdaysMin is a struct that holds the minimal names of the weekdays.
+</p>
+
+			<pre>type DatesWeekdaysMin struct {
+<span id="DatesWeekdaysMin.Sunday"></span>    Sunday    <a href="/pkg/builtin/#string">string</a> `json:&#34;Su&#34;`
+<span id="DatesWeekdaysMin.Monday"></span>    Monday    <a href="/pkg/builtin/#string">string</a> `json:&#34;Mo&#34;`
+<span id="DatesWeekdaysMin.Tuesday"></span>    Tuesday   <a href="/pkg/builtin/#string">string</a> `json:&#34;Tu&#34;`
+<span id="DatesWeekdaysMin.Wednesday"></span>    Wednesday <a href="/pkg/builtin/#string">string</a> `json:&#34;We&#34;`
+<span id="DatesWeekdaysMin.Thursday"></span>    Thursday  <a href="/pkg/builtin/#string">string</a> `json:&#34;Th&#34;`
+<span id="DatesWeekdaysMin.Friday"></span>    Friday    <a href="/pkg/builtin/#string">string</a> `json:&#34;Fr&#34;`
+<span id="DatesWeekdaysMin.Saturday"></span>    Saturday  <a href="/pkg/builtin/#string">string</a> `json:&#34;Sa&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DatesWeekdaysShort">type <a href="/src/github.com/davidgs/datesi18n/DatesI18n.go?s=2659:2910#L68">DatesWeekdaysShort</a>
+				<a class="permalink" href="#DatesWeekdaysShort">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+DatesWeekdaysShort is a struct that holds the short names of the weekdays.
+</p>
+
+			<pre>type DatesWeekdaysShort struct {
+<span id="DatesWeekdaysShort.Sunday"></span>    Sunday    <a href="/pkg/builtin/#string">string</a> `json:&#34;sun&#34;`
+<span id="DatesWeekdaysShort.Monday"></span>    Monday    <a href="/pkg/builtin/#string">string</a> `json:&#34;mon&#34;`
+<span id="DatesWeekdaysShort.Tuesday"></span>    Tuesday   <a href="/pkg/builtin/#string">string</a> `json:&#34;tue&#34;`
+<span id="DatesWeekdaysShort.Wednesday"></span>    Wednesday <a href="/pkg/builtin/#string">string</a> `json:&#34;wed&#34;`
+<span id="DatesWeekdaysShort.Thursday"></span>    Thursday  <a href="/pkg/builtin/#string">string</a> `json:&#34;thu&#34;`
+<span id="DatesWeekdaysShort.Friday"></span>    Friday    <a href="/pkg/builtin/#string">string</a> `json:&#34;fri&#34;`
+<span id="DatesWeekdaysShort.Saturday"></span>    Saturday  <a href="/pkg/builtin/#string">string</a> `json:&#34;sat&#34;`
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.17.1.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="/LICENSE">BSD license</a>.<br>
+<a href="https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>

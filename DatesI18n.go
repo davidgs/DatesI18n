@@ -1,23 +1,71 @@
-package datesI18N
+// MIT License
+
+// Copyright (c) 2021 David G. Simmons
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+// Package datesi18n provides internationalization for programs needing
+// language support for weekdays and months. The package is intended to
+// be used with the dates package.
+//
+// The following code is an example of using the datesi18n package:
+//
+//	import "github.com/mjibson/go-datesi18n"
+//
+//	func main() {
+//		d := datesi18n.NewDatesI18N("en")
+//		fmt.Println(d.Weekdays.Monday)
+//		fmt.Println(d.WeekdaysShort.Monday)
+//		fmt.Println(d.WeekdaysMin.Monday)
+//		fmt.Println(d.Months.January)
+//	}
+//
+// The output of the program is:
+//
+//	Monday
+//	Mon
+//	M
+//	January
+package datesi18n
 
 import (
 	"fmt"
 	"encoding/json"
 	"io/ioutil"
+	"os"
 )
 
 var language = "en"
 
+// DatesI18N is a struct that holds the internationalization data for
+// the dates package.
 type DatesI18N struct {
-	Weekdays       Dates_Weekdays       `json:"weekdays"`
-	Weekdays_Short Dates_Weekdays_Short `json:"weekdays_short"`
-	Weekdays_Min   Dates_Weekdays_Min   `json:"weekdays_min"`
-	Months         Dates_Months         `json:"months"`
-	Months_Short   Dates_Months_Short   `json:"months_short"`
+	Weekdays       DatesWeekdays       `json:"weekdays"`
+	WeekdaysShort DatesWeekdaysShort `json:"weekdaysshort"`
+	WeekdaysMin   DatesWeekdaysMin   `json:"weekdaysmin"`
+	Months         DatesMonths         `json:"months"`
+	MonthsShort   DatesMonthsShort   `json:"monthsshort"`
 	Language 		 string               `json:"language"`
 }
 
-type Dates_Weekdays struct {
+// DatesWeekdays is a struct that holds the names of the weekdays.
+type DatesWeekdays struct {
 	Sunday    string `json:"sunday"`
 	Monday    string `json:"monday"`
 	Tuesday   string `json:"tuesday"`
@@ -27,7 +75,8 @@ type Dates_Weekdays struct {
 	Saturday  string `json:"saturday"`
 }
 
-type Dates_Weekdays_Short struct {
+// DatesWeekdaysShort is a struct that holds the short names of the weekdays.
+type DatesWeekdaysShort struct {
 	Sunday    string `json:"sun"`
 	Monday    string `json:"mon"`
 	Tuesday   string `json:"tue"`
@@ -37,7 +86,8 @@ type Dates_Weekdays_Short struct {
 	Saturday  string `json:"sat"`
 }
 
-type Dates_Weekdays_Min struct {
+// DattesWeekdaysMin is a struct that holds the minimal names of the weekdays.
+type DatesWeekdaysMin struct {
 	Sunday    string `json:"Su"`
 	Monday    string `json:"Mo"`
 	Tuesday   string `json:"Tu"`
@@ -47,7 +97,8 @@ type Dates_Weekdays_Min struct {
 	Saturday  string `json:"Sa"`
 }
 
-type Dates_Months struct {
+// DatesMonths is a struct that holds the names of the months.
+type DatesMonths struct {
 	January   string `json:"january"`
 	February  string `json:"february"`
 	March     string `json:"march"`
@@ -62,7 +113,8 @@ type Dates_Months struct {
 	December  string `json:"december"`
 }
 
-type Dates_Months_Short struct {
+// DatesMonthsShort is a struct that holds the short names of the months.
+type DatesMonthsShort struct {
 	January   string `json:"jan"`
 	February  string `json:"feb"`
 	March     string `json:"mar"`
@@ -77,6 +129,7 @@ type Dates_Months_Short struct {
 	December  string `json:"dec"`
 }
 
+// DayName returns the name of the day of the week given by index number.
 func (d *DatesI18N) DayName(day int) string { // test written
 	switch day {
 	case 0:
@@ -97,6 +150,7 @@ func (d *DatesI18N) DayName(day int) string { // test written
 	return ""
 }
 
+// DayNumber returns the number of the day of the week given by name.
 func (d *DatesI18N) DayNumber(day string) int { // test written
 	switch day {
 	case d.Weekdays.Sunday:
@@ -117,86 +171,91 @@ func (d *DatesI18N) DayNumber(day string) int { // test written
 	return -1
 }
 
+// ShortDayName returns the short name of the day of the week given by index number.
 func (d *DatesI18N) ShortDayName(day int) string { // test written
 	switch day {
 	case 0:
-		return d.Weekdays_Short.Sunday
+		return d.WeekdaysShort.Sunday
 	case 1:
-		return d.Weekdays_Short.Monday
+		return d.WeekdaysShort.Monday
 	case 2:
-		return d.Weekdays_Short.Tuesday
+		return d.WeekdaysShort.Tuesday
 	case 3:
-		return d.Weekdays_Short.Wednesday
+		return d.WeekdaysShort.Wednesday
 	case 4:
-		return d.Weekdays_Short.Thursday
+		return d.WeekdaysShort.Thursday
 	case 5:
-		return d.Weekdays_Short.Friday
+		return d.WeekdaysShort.Friday
 	case 6:
-		return d.Weekdays_Short.Saturday
+		return d.WeekdaysShort.Saturday
 	}
 	return ""
 }
 
+// ShortDayNumber returns the number of the day of the week given by short name.
 func (d *DatesI18N) ShortDayNumber(day string) int { // test written
 	switch day {
-	case d.Weekdays_Short.Sunday:
+	case d.WeekdaysShort.Sunday:
 		return 0
-	case d.Weekdays_Short.Monday:
+	case d.WeekdaysShort.Monday:
 		return 1
-	case d.Weekdays_Short.Tuesday:
+	case d.WeekdaysShort.Tuesday:
 		return 2
-	case d.Weekdays_Short.Wednesday:
+	case d.WeekdaysShort.Wednesday:
 		return 3
-	case d.Weekdays_Short.Thursday:
+	case d.WeekdaysShort.Thursday:
 		return 4
-	case d.Weekdays_Short.Friday:
+	case d.WeekdaysShort.Friday:
 		return 5
-	case d.Weekdays_Short.Saturday:
+	case d.WeekdaysShort.Saturday:
 		return 6
 	}
 	return -1
 }
 
+// MinDayName returns the minimal name of the day of the week given by index number.
 func (d *DatesI18N) MinDayName(day int) string { // test written
 	switch day {
 	case 0:
-		return d.Weekdays_Min.Sunday
+		return d.WeekdaysMin.Sunday
 	case 1:
-		return d.Weekdays_Min.Monday
+		return d.WeekdaysMin.Monday
 	case 2:
-		return d.Weekdays_Min.Tuesday
+		return d.WeekdaysMin.Tuesday
 	case 3:
-		return d.Weekdays_Min.Wednesday
+		return d.WeekdaysMin.Wednesday
 	case 4:
-		return d.Weekdays_Min.Thursday
+		return d.WeekdaysMin.Thursday
 	case 5:
-		return d.Weekdays_Min.Friday
+		return d.WeekdaysMin.Friday
 	case 6:
-		return d.Weekdays_Min.Saturday
+		return d.WeekdaysMin.Saturday
 	}
 	return ""
 }
 
+// MinDayNumber returns the number of the day of the week given by minimal name.
 func (d *DatesI18N) MinDayNumber(day string) int {
 	switch day {
-	case d.Weekdays_Min.Sunday:
+	case d.WeekdaysMin.Sunday:
 		return 0
-	case d.Weekdays_Min.Monday:
+	case d.WeekdaysMin.Monday:
 		return 1
-	case d.Weekdays_Min.Tuesday:
+	case d.WeekdaysMin.Tuesday:
 		return 2
-	case d.Weekdays_Min.Wednesday:
+	case d.WeekdaysMin.Wednesday:
 		return 3
-	case d.Weekdays_Min.Thursday:
+	case d.WeekdaysMin.Thursday:
 		return 4
-	case d.Weekdays_Min.Friday:
+	case d.WeekdaysMin.Friday:
 		return 5
-	case d.Weekdays_Min.Saturday:
+	case d.WeekdaysMin.Saturday:
 		return 6
 	}
 	return -1
 }
 
+// MonthName returns the name of the month given by index number.
 func (d *DatesI18N) MonthName(month int) string {
 	switch month {
 	case 1:
@@ -227,6 +286,7 @@ func (d *DatesI18N) MonthName(month int) string {
 	return ""
 }
 
+// MonthNumber returns the number of the month given by name.
 func (d *DatesI18N) MonthNumber(month string) int {
 	switch month {
 	case d.Months.January:
@@ -257,76 +317,84 @@ func (d *DatesI18N) MonthNumber(month string) int {
 	return -1
 }
 
+// ShortMonthName returns the short name of the month given by index number.
 func (d *DatesI18N) ShortMonthName(month int) string {
 	switch month {
 	case 1:
-		return d.Months_Short.January
+		return d.MonthsShort.January
 	case 2:
-		return d.Months_Short.February
+		return d.MonthsShort.February
 	case 3:
-		return d.Months_Short.March
+		return d.MonthsShort.March
 	case 4:
-		return d.Months_Short.April
+		return d.MonthsShort.April
 	case 5:
-		return d.Months_Short.May
+		return d.MonthsShort.May
 	case 6:
-		return d.Months_Short.June
+		return d.MonthsShort.June
 	case 7:
-		return d.Months_Short.July
+		return d.MonthsShort.July
 	case 8:
-		return d.Months_Short.August
+		return d.MonthsShort.August
 	case 9:
-		return d.Months_Short.September
+		return d.MonthsShort.September
 	case 10:
-		return d.Months_Short.October
+		return d.MonthsShort.October
 	case 11:
-		return d.Months_Short.November
+		return d.MonthsShort.November
 	case 12:
-		return d.Months_Short.December
+		return d.MonthsShort.December
 	}
 	return ""
 }
 
+// ShortMonthNumber returns the number of the month given by short name.
 func (d *DatesI18N) ShortMonthNumber(month string) int {
 	switch month {
-	case d.Months_Short.January:
+	case d.MonthsShort.January:
 		return 1
-	case d.Months_Short.February:
+	case d.MonthsShort.February:
 		return 2
-	case d.Months_Short.March:
+	case d.MonthsShort.March:
 		return 3
-	case d.Months_Short.April:
+	case d.MonthsShort.April:
 		return 4
-	case d.Months_Short.May:
+	case d.MonthsShort.May:
 		return 5
-	case d.Months_Short.June:
+	case d.MonthsShort.June:
 		return 6
-	case d.Months_Short.July:
+	case d.MonthsShort.July:
 		return 7
-	case d.Months_Short.August:
+	case d.MonthsShort.August:
 		return 8
-	case d.Months_Short.September:
+	case d.MonthsShort.September:
 		return 9
-	case d.Months_Short.October:
+	case d.MonthsShort.October:
 		return 10
-	case d.Months_Short.November:
+	case d.MonthsShort.November:
 		return 11
-	case d.Months_Short.December:
+	case d.MonthsShort.December:
 		return 12
 	}
 	return -1
 }
 
-
+// NewDatesI18N returns a new DatesI18N struct initialized with the language values for the given language
 func NewDatesI18N(lang string) *DatesI18N { // test written
 	d := new(DatesI18N)
 	d.setLanguage(lang)
 	return d
 }
 
+// loads the language file for the given language
 func (d *DatesI18N) setLanguage(lang string) {
 	d.Language = lang
-	dat, err := ioutil.ReadFile("lang/dates_" + lang + ".json")
+	p := os.Getenv("GOPATH")
+	if p == "" {
+		p = "."
+	}
+	p = filepath.Join(p, "src", "github.com", "davidgs", "datesi18n", "lang", "dates_" + lang + ".json")
+	dat, err := ioutil.ReadFile(p) // "lang/dates_" + lang + ".json")
 	if err != nil {
 		fmt.Println("No json file: ", err)
 	}
