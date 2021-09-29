@@ -131,6 +131,7 @@ type DatesMonthsShort struct {
 	December  string `json:"dec"`
 }
 
+const monthIndex = 0 + iota
 // DayName returns the name of the day of the week given by index number.
 func (d *DatesI18N) DayName(day int) string { // test written
 	switch day {
@@ -259,7 +260,7 @@ func (d *DatesI18N) MinDayNumber(day string) int {
 
 // MonthName returns the name of the month given by index number.
 func (d *DatesI18N) MonthName(month int) string {
-	month += iota
+	month = month + monthIndex
 	switch month {
 	case 1:
 		return d.Months.January
@@ -291,7 +292,6 @@ func (d *DatesI18N) MonthName(month int) string {
 
 // MonthNumber returns the number of the month given by name.
 func (d *DatesI18N) MonthNumber(month string) int {
-	month += iota
 	switch month {
 	case d.Months.January:
 		return 1
@@ -323,7 +323,7 @@ func (d *DatesI18N) MonthNumber(month string) int {
 
 // ShortMonthName returns the short name of the month given by index number.
 func (d *DatesI18N) ShortMonthName(month int) string {
-	month += iota
+	 month += monthIndex
 	switch month {
 	case 1:
 		return d.MonthsShort.January
