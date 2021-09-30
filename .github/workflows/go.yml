@@ -2,9 +2,12 @@ name: Go
 
 on:
   push:
-    branches: [ $default-branch ]
+    branches:
+      - '!main'   # excludes master
+      - '**'         # matches every branch
   pull_request:
     branches: [ $default-branch ]
+  workflow_dispatch:
 
 jobs:
 
