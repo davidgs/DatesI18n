@@ -31,3 +31,5 @@ If you are using the Go `time` Package, you can use this package to give you tra
 **Note:** Not all languages have all parts translated! Soo the `lang/` directory for languages supported. See the individual `.json` file for which parts of the Days/Months are provided.
 
 If you would like to provide additional translations or additions to a given translation, please submit a PR!
+
+See [Supported Languages](supported-langs.yml) for a current list of fully- or partially-supported languages
