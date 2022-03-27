@@ -2,11 +2,11 @@
     "weekdays": {
         "sunday": "Domingo",
         "monday": "Segunda",
-        "tuesday": "Terca",
+        "tuesday": "Terça",
         "wednesday": "Quarta",
         "thursday": "Quinta",
         "friday": "Sexta",
-        "saturday": "Sabado"
+        "saturday": "Sábado"
     },
     "weekdays_short": {
         "sun": "Dom",
@@ -15,7 +15,7 @@
         "wed": "Qua",
         "thu": "Qui",
         "fri": "Sex",
-        "sat": "Sab"
+        "sat": "Sáb"
     },
     "weekdays_min": {
         "Su": "",
@@ -29,7 +29,7 @@
     "months": {
         "january": "Janeiro",
         "february": "Fevereiro",
-        "march": "Marco",
+        "march": "Março",
         "april": "Abril",
         "may": "Maio",
         "june": "Junho",
